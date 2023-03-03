@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #171717;
+    background-color: #202124;
 }
 
 .content_wrapper {
@@ -65,8 +65,8 @@
     border: none;
     border-radius: 5px;
     margin-left: 10px;
-    color: black;
-    background-color: #F2F3F4;
+    color: #e8debd;
+    background-color: #303134;
 }
 
 .search_btns button:hover {
@@ -78,29 +78,52 @@
 }
 
 .lucky_search {
-    width: 140px;
+    width: 120px;
 }
 
 .language {
     margin-top: 20px;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
-.language p a {
+.language p  {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+.language_links a {
     color: #89b3f6;
+    margin: 10px;
+    font-weight: 700;
 }
 
-.language p a:hover {
+.language_links a:hover {
     text-decoration: underline;
 }
+@media only screen and (max-width: 600px) {
+    .logo_img {
+        width: 150px;
+    }
 
-.language p bdo {
-    font-weight: bold;
-    color: #202124;
-}
-
-@media only screen and (max-width: 650px) {
     .search_bar {
         width: 90%;
     }
+    .search_btns {
+        display: none;
+    }
+    .language p {
+        margin-bottom: 10px;
+    }
+
+    .language {
+        flex-direction: column;
+        font-size: 12px;
+    }
 }
+

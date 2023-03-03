@@ -1,5 +1,5 @@
 footer {
-    background-color: #F2F2F2;
+    background-color: #171717;
     height: 100px;
 }
 
@@ -11,7 +11,7 @@ footer {
 
 .upper_footer {
     height: 50%;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #cccc;
 
 }
 
@@ -49,6 +49,16 @@ footer {
 
 .lower_right_footer li {
     margin-left: 15px;
+}
+
+@media only screen and (max-width: 380px) {
+    .upper_footer p{
+        font-size: 12px;
+    }
+
+    .lower_footer ul li a {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
